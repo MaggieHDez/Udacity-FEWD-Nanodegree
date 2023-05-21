@@ -1,0 +1,56 @@
+.container{
+    /* Step 1: Set display to grid */
+      display:grid;
+      height: 97vh;
+   /* Step 2: setup rows amd columns */
+      /* grid-template-columns: repeat(3, 1fr); */
+      /* grid-template-columns: 300px 300px 300px; */
+      grid-template-columns: 1fr;
+      grid-template-rows: 250px 1fr 1fr;
+      grid-template-areas:
+      "hd"
+      "feat"
+      "main"
+      "feat2"
+      "ft";
+      border: 2px solid yellow;
+
+  }
+  .box{
+    /* width: 100%; */
+    border: 1px solid red;
+    background: #F8FA9D;
+    }
+
+  .header{
+      grid-area:hd;
+  }
+
+  .footer{
+    grid-area: ft;
+  }
+  .feature{
+    grid-area: feat;
+  }
+  .sidebar2{
+    grid-area: feat2;
+  }
+  .content{
+    grid-area: main;
+  }
+  @media(min-width: 1100px){
+    .container{
+        /* Step 1: Set display to grid */
+          display:grid;
+       /* Step 2: setup rows amd columns */
+          /* grid-template-columns: repeat(3, 1fr); */
+          grid-template-columns: repeat(8, 1fr);
+          grid-template-rows: 200px 600px;
+          grid-template-areas:
+          "hd hd hd hd hd hd hd hd"
+          "feat feat main main main main feat2 feat2"
+          "ft ft ft ft ft ft ft ft";
+          border: 2px solid yellow;
+
+      }
+  }
