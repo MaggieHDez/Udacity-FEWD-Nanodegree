@@ -11,67 +11,69 @@
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
       rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <!-- Main header -->
-
-    <header class="logo">
-        <img src="./images/travel-tips-logo.png">
-        <h1>Travel Tips & More</h1>
-    </header>
-    <!-- Navbar -->
-    <nav>
-      <ul>
-        <li><a href="././index.html">Home</a></li>
-        <li><a href="././blog-post.html">Blog Post</a></li>
-        <li><a href="#subscribe">Subscribe</a></li>
-      </ul>
-    </nav>
-
-    <!-- The home page content -->
-    <main>
-      <!-- It contains a summary of the blog post -->
-      <article>
-        <h2>Traveling on a Budget: Explore the World without Breaking the Bank</h2>
-
-        <div>post image</div>
-        <p>
-            Looking to explore the world without breaking the bank? Discover practical tips and strategies for traveling on a budget in our latest blog post. From setting a realistic budget to choosing affordable destinations, optimizing transportation costs, and embracing free and low-cost activities, we'll show you how to make the most of your journey while keeping your finances intact.
-        </p>
-
-        <a href="blog-post.html"> Read More</a>
-
-      </article>
-
-      <!-- This section is realted blog posts -->
-      <section>
-        <h2>Related Posts</h2>
-
-        <ul>
-          <li><a href="#">The Ultimate Guide to Sustainable Travel: Explore Responsibly, Leave a Positive Impact</a></li>
-          <li><a href="#">Exploring Ancient History: Unveiling the Mysteries of Archaeological Sites</a></li>
+    <div class="container grid grid-container">
+      <!-- Main header -->
+      <header class="header flex">
+          <img class="img-logo" src="./images/travel-icon.png">
+          <h1 class="txt-logo">Travel Tips & More</h1>
+      </header>
+      <!-- Navbar -->
+      <nav class="navbar flex">
+        <ul class="navbar-list flex">
+          <li class="navbar-item"><a href="././index.html">Home</a></li>
+          <li class="navbar-item"><a href="././blog-post.html">Blog Post</a></li>
+          <li class="navbar-item"><a href="#subscribe">Subscribe</a></li>
         </ul>
-      </section>
-      <section id="subscribe">
-        <h2>Subscribe for more travel tips!</h2>
+      </nav>
 
-        <p>
-            All the tips and resources you could ever need or want — straight to your email!
-        </p>
+      <!-- The home page content -->
+      <main id="main-content">
+        <!-- It contains a summary of the blog post -->
+        <article class="main-post">
+          <h2>Traveling on a Budget: Explore the World without Breaking the Bank</h2>
 
-        <div>
-            <input type="email" placeholder="Enter your email address" />
-            <button>Subscribe</button>
-        </div>
-      </section>
-    </main>
+          <img id="post-img" src="./images/budget-travel.jpg" />
+          <p id="post-summary">
+              Looking to explore the world without breaking the bank? Discover practical tips and strategies for traveling on a budget in our latest blog post. From setting a realistic budget to choosing affordable destinations, optimizing transportation costs, and embracing free and low-cost activities, we'll show you how to make the most of your journey while keeping your finances intact.
+          </p>
 
-    <!-- Footer -->
+          <a href="blog-post.html"> Read More</a>
 
-    <footer>
-      <p>©Copyright 2023 by Margarita Hernandez. Designed for Udacity Front-End Nanodegree Program</p>
-    </footer>
+        </article>
+
+        <!-- This section is realted blog posts -->
+        <section class="related-post">
+          <h2>Related Posts</h2>
+
+          <ul>
+            <li><a href="#">The Ultimate Guide to Sustainable Travel: Explore Responsibly, Leave a Positive Impact</a></li>
+            <li><a href="#">Exploring Ancient History: Unveiling the Mysteries of Archaeological Sites</a></li>
+          </ul>
+        </section>
+        <section id="subscribe">
+          <h2>Subscribe for more travel tips!</h2>
+
+          <p>
+              All the tips and resources you could ever need or want — straight to your email!
+          </p>
+
+          <div>
+              <input type="email" placeholder="Enter your email address" />
+              <button>Subscribe</button>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+
+      <footer class="footer">
+        <p>©Copyright 2023 by Margarita Hernandez.</p>
+        <p>For Udacity Front-End Nanodegree Program</p>
+      </footer>
+  </div>
   </body>
 </html>
