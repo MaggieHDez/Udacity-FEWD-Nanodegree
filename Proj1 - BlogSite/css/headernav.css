@@ -38,7 +38,7 @@
 .navbar-list {
 	flex-flow: row wrap;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	list-style-type: none;
 	font-size: 1em;
@@ -73,14 +73,12 @@
 }
 
 @media (min-width: 600px) {
-	.navbar-ul {
+	.navbar-list {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: flex-end;
 		align-items: center;
-	}
-
-	.navbar-list {
+		background-color: #ffbd1f;
 		list-style-type: none;
 		font-size: 1em;
 		margin: 0px;
