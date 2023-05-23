@@ -26,6 +26,7 @@
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    color: #fdfdfd;
 }
 
 .subscribe-input:focus{
@@ -36,7 +37,7 @@
     background-color: #154484;
     border: 1px solid #154484;
 	border-radius: 5px;
-    color: #fff;
+    color: #fdfdfd;
 	font-weight: 700;
 	padding: 8px 20px;
     text-decoration: none;

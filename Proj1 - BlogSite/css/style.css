@@ -29,7 +29,7 @@ body {
 .main-post {
     border: 1px solid #e0e0e0;
     border-radius: 12px;
-    background: #fff;
+    background: #fdfdfd;
     padding: 20px;
     font-size: 1em;
 }
@@ -90,7 +90,7 @@ body {
     background-color: #154484;
     border: 1px solid #154484;
 	border-radius: 6px;
-    color: #fff;
+    color: #fdfdfd;
 	font-weight: 700;
 	padding: 8px 20px;
     text-decoration: none;
