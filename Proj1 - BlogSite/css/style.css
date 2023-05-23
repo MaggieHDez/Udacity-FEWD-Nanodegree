@@ -164,3 +164,15 @@ body {
     display: block;
     padding-left: 10px;
 }
+
+@media (min-width: 900px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(100px,auto);
+        grid-template-areas:
+        "hd hd nav nav"
+        "main main main main"
+        "ft ft ft ft";
+    }
+}

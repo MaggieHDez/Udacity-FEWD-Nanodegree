@@ -72,13 +72,29 @@
 	color: #000;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 900px) {
+
+	.header{
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 10px;
+		height: 50%;
+	}
+
+	.img-logo {
+		width: 100px;
+	}
+
+	.navbar {
+		display: flex;
+		height: 80%;
+	}
+
 	.navbar-list {
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: flex-end;
 		align-items: center;
-		background-color: #ffbd1f;
 		list-style-type: none;
 		font-size: 1em;
 		margin: 0px;
