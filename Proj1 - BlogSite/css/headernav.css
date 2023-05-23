@@ -30,7 +30,7 @@
 
 .navbar {
 	grid-area: nav;
-	padding: 15px;
+	padding: 10px;
 	text-decoration: none;
 	z-index: 1;
 }
@@ -48,8 +48,7 @@
 }
 
 .navbar-item {
-	list-style-type: none;
-	margin: 5px;
+	margin: 9px;
 }
 
 .navbar-link {
