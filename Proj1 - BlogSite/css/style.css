@@ -7,8 +7,12 @@ body {
     font-family: 'Wix Madefor Display', sans-serif;
 }
 
+.flex{
+    display: flex;
+}
+
 .grid-container {
-	display: grid;
+    display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: minmax(100px,auto);
 	grid-template-areas:
@@ -23,10 +27,9 @@ body {
 }
 
 .main-post {
+    border: 1px solid #e0e0e0;
     border-radius: 12px;
     background: #fff;
-    box-shadow:  13px 13px 26px #bfbfbf,
-             -13px -13px 26px #ffffff;
     padding: 20px;
 }
 
@@ -119,10 +122,9 @@ body {
 }
 .related-card{
     margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
     border-radius: 12px;
     background: #fff;
-    box-shadow:  13px 13px 26px #bfbfbf,
-             -13px -13px 26px #ffffff;
     padding: 13px;
 }
 

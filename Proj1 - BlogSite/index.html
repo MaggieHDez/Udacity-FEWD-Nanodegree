@@ -15,13 +15,13 @@
   </head>
 
   <body>
-    <div class="container grid grid-container">
+    <div class="container grid-container">
 
       <!-- Main header -->
       <header class="header flex">
-          <img class="img-logo" src="./images/travel-icon.png">
-          <h1 class="txt-logo">Travel Tips <span class="more-txt">& More</span></h1>
-      </header>
+        <a class="logo-link flex" href="./index.html"><img class="img-logo" src="./images/travel-icon.png">
+        <span class="txt-logo">Travel Tips <span class="more-txt">& More</span></span></a>
+    </header>
 
       <!-- Navbar -->
       <nav class="navbar flex">
@@ -36,11 +36,11 @@
       <main class="main-content">
         <!-- It contains a summary of the blog post -->
         <article class="main-post">
-          <h2 class="post-title">
+          <h1 class="post-title">
             <a class="post-link" href="blog-post.html"><img class="post-img" src="./images/budget-travel.jpg" alt="Woman looking at a roadmap">
               <span class="post-txt">Traveling on a Budget: Explore the World without Breaking the Bank</span>
             </a>
-          </h2>
+          </h1>
           <p class="post-summary">
               Looking to explore the world without breaking the bank? Discover practical tips and strategies for traveling on a budget in our latest blog post. From setting a realistic budget to choosing affordable destinations, optimizing transportation costs, and embracing free and low-cost activities, we'll show you how to make the most of your journey while keeping your finances intact.
           </p>
@@ -66,23 +66,23 @@
 
         <section class="subscribe">
           <h2 class="subscribe-title">Subscribe for more travel tips!</h2>
-
-          <p class="subscribe-txt">
+          <div class="flex">
+            <p class="subscribe-txt flex">
               All the tips and resources you could ever need or want — straight to your email!
-          </p>
+            </p>
+            <form class="subscribe-form" action="#">
+              <label class="subscribe-label" for="fname">First Name</label>
+              <input class="subscribe-input" type="text" id="fname" name="firstname" placeholder="Enter your first name" />
 
-          <form action="#">
-            <label class="subscribe-label" for="fname">First Name</label>
-            <input class="subscribe-input" type="text" id="fname" name="firstname" placeholder="Enter your first name"/>
+              <label class="subscribe-label" for="lname">Last Name</label>
+              <input class="subscribe-input" type="text" id="lname" name="lastname" placeholder="Enter your last name" />
 
-            <label class="subscribe-label" for="lname">Last Name</label>
-            <input class="subscribe-input" type="text" id="lname" name="lastname" placeholder="Enter your last name"/>
+              <label class="subscribe-label" for="email">Email address</label>
+              <input class="subscribe-input" type="email" id="email" name="email" placeholder="Enter your email address" />
 
-            <label class="subscribe-label" for="email">Email address</label>
-            <input class="subscribe-input" type="email" id="email" name="email" placeholder="Enter your email address" />
-
-            <input class="subscribe-btn" type="submit" value="Subscribe"/>
-          </form>
+              <input class="subscribe-btn" type="submit" value="Subscribe" />
+            </form>
+          </div>
         </section>
       </main>
 

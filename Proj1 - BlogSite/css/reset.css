@@ -70,18 +70,10 @@ select {
 /*         Utility classes         */
 /* ------------------------------- */
 
-.flex {
-  display: flex;
-}
-
-.grid {
-  display: grid;
-}
-
 .container {
   padding: 0 2em;
   margin: 0 auto;
-  max-width: 100rem;
+  max-width: 80rem;
 }
 
 .sr-only {
