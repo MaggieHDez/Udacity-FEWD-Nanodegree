@@ -1,0 +1,10 @@
+.footer {
+    grid-area: ft;
+    padding: 15px;
+}
+
+.footer-txt{
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9em;
+}

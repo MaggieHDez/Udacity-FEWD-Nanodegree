@@ -72,18 +72,15 @@ select {
 
 .flex {
   display: flex;
-  /* gap: var(--gap, 1rem); */
 }
 
 .grid {
   display: grid;
-  /* gap: var(--gap, 1rem); */
 }
 
 .container {
-  /* padding: 0 2em; */
-  padding-inline: 2em;
-  margin-inline: auto;
+  padding: 0 2em;
+  margin: 0 auto;
   max-width: 100rem;
 }
 

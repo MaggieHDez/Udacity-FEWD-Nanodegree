@@ -2,7 +2,6 @@
 
 .header {
     grid-area: hd;
-    background-color: aqua;
     justify-content: center;
     align-items: center;
 }
@@ -13,13 +12,21 @@
 }
 .txt-logo {
     font-size: 1.5em;
+	color: #154484;
+}
+
+.more-txt {
+	color: #ffbd1f;
 }
 
 /* navbar */
 
-nav {
+.navbar {
 	grid-area: nav;
 	flex-flow: row wrap;
+	padding: 15px;
+	text-decoration: none;
+	z-index: 1;
 }
 
 .navbar-list {
@@ -27,17 +34,11 @@ nav {
 	width: 100%;
 	justify-content: center;
 	align-items: center;
-}
-
-nav ul {
 	list-style-type: none;
 	font-size: 1em;
-	margin: 0px;
+	margin: 0;
+	padding: 0;
 	transition: all 0.3s;
-}
-
-li {
-	padding: 0 5px;
 }
 
 .navbar-item {
@@ -45,27 +46,31 @@ li {
 	margin: 5px;
 }
 
-.navbar-item > a {
+.navbar-link {
 	color: #222;
 	font-weight: 700;
-	padding: 8px 20px;
-	border-radius: 2px;
+	padding: 8px 10px;
+	border-radius: 5px;
 }
 
-.navbar-item > a:hover {
-	color: #00a6ff !important;
-	background-color: #000;
-	border: 1px solid #000;
+.navbar-link:link {
+	text-decoration: none;
 }
 
-.navbar-item > a:active {
-	color: #00a6ff !important;
-	background-color: #000;
-	border: 1px solid #000;
+.navbar-link:hover {
+	color: #fff !important;
+	background-color: #154484;
+	border: 1px solid #154484;
 }
 
-.navbar-item > a:visited {
-	color: #222;
+.navbar-link:active {
+	color: #fff !important;
+	background-color: #ffbd1f;
+	border: 1px solid #ffbd1f;
+}
+
+.navbar-link:visited {
+	color: #000;
 }
 
 @media (min-width: 600px) {
@@ -76,7 +81,7 @@ li {
 		align-items: center;
 	}
 
-	nav ul {
+	.navbar-list {
 		list-style-type: none;
 		font-size: 1em;
 		margin: 0px;
