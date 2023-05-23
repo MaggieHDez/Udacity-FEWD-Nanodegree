@@ -177,7 +177,7 @@ body {
         "ft ft ft ft";
     }
 
-    .aside {
+    .flex-container {
         display: flex;
         gap: 1rem;
     }
