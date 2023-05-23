@@ -11,14 +11,13 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 1.2em;
-    font-weight: 700;
-    width: 50%;
+    font-size: 0.9em;
+    width: 40%;
     padding: 0 50px;
 }
 
 .subscribe-form{
-    width: 50%;
+    width: 60%;
     padding: 0 50px;
 }
 
