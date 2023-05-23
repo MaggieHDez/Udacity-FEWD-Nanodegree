@@ -166,6 +166,7 @@ body {
 }
 
 @media (min-width: 900px){
+
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -174,5 +175,14 @@ body {
         "hd hd nav nav"
         "main main main main"
         "ft ft ft ft";
+    }
+
+    .aside {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .related-post {
+        margin: 0;
     }
 }

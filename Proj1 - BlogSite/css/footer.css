@@ -101,3 +101,23 @@
 .linkedin {
     width: 35px;
 }
+
+@media (min-width: 900px) {
+
+    .subscribe-container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .subscribe-txt {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        padding-inline: 30px;
+        font-size: 1.2em;
+    }
+
+    .subscribe-form {
+        width: 50%;
+    }
+}

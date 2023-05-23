@@ -58,9 +58,7 @@ body {
 }
 
 .bylines-avatar {
-    border-radius: 50%;
-    height: 5%;
-    width: 5%;
+    display: none
 }
 
 .bylines-info {
@@ -104,4 +102,23 @@ body {
 
 .quote-txt p::after {
     content: "\201D";
+}
+
+@media (min-width: 900px){
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: minmax(100px,auto);
+        grid-template-areas:
+        "hd hd nav nav"
+        "main main main main"
+        "ft ft ft ft";
+    }
+
+    .bylines-avatar {
+        display: block;
+        border-radius: 50%;
+        height: 60px;
+    }
 }
