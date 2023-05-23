@@ -36,6 +36,15 @@ body {
   line-height: 1.5;
 }
 
+/* Set up link and lists */
+a {
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
 /* Make images easier to work with */
 img,
 picture {
