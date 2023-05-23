@@ -1,3 +1,53 @@
+.subscribe{
+    margin-top: -10px;
+}
+
+.subscribe-title{
+    margin-bottom: 13px;
+    font-size: 1.2em;
+}
+
+.subscribe-txt{
+    font-size: 0.9em;
+}
+
+.subscribe-label {
+	font-size: 0.9em;
+    font-weight: 700;
+	margin-left: 12px;
+}
+
+.subscribe-input{
+    font-size: 0.80em;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #154484;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.subscribe-input:focus{
+    outline-color:  #ffbd1f;
+}
+
+.subscribe-btn {
+    background-color: #154484;
+    border: 1px solid #154484;
+	border-radius: 5px;
+    color: #fff;
+	font-weight: 700;
+	padding: 8px 20px;
+    text-decoration: none;
+}
+
+.subscribe-btn:hover {
+	background-color: #ffbd1f;
+	border: 1px solid #ffbd1f;
+}
+
 .footer {
     grid-area: ft;
     padding: 15px;
@@ -7,4 +57,27 @@
     align-items: center;
     justify-content: center;
     font-size: 0.9em;
+}
+
+.footer-link {
+	color: #000;
+	font-weight: 700;
+    padding-left: 3px;
+}
+
+.footer-link:link {
+	text-decoration: none;
+}
+
+.footer-link:hover {
+	color: #154484 !important;
+}
+
+.footer-link:active {
+	color: #ffbd1f !important;
+}
+
+.footer-link:visited {
+    text-decoration: none !important;
+	color: #000;
 }

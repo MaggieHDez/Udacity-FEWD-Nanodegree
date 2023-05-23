@@ -1,4 +1,27 @@
-@import "style.css";
+@import "reset.css";
+@import "headernav.css";
+@import "footer.css";
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Wix Madefor Display', sans-serif;
+}
+
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: minmax(100px,auto);
+	grid-template-areas:
+    "hd"
+    "nav"
+    "main"
+	"ft";
+}
+
+.main-content {
+    grid-area: main;
+}
 
 blockquote {
     margin: 0;
