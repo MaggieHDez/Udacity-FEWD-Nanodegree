@@ -26,26 +26,30 @@ body {
     grid-area: main;
 }
 
-.main-title{
+.main-title {
     margin-bottom: 24px;
+    font-size: 1.5em;
     font-weight: 800;
     color: #154484;
 }
 
-.blog-img{
+.blog-img {
     text-align: center;
+    padding: 5px 0;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #cccbcbb7;
 }
 
-.post-img{
+.post-img {
     background-position: center;
     background-size: cover;
-    margin: 0 auto;
     width: 100%;
+    border-radius: 6px;
 }
 
-.image-caption{
+.image-caption {
     padding: 5px;
-    font-size: 0.75em;
+    font-size: 12px;
 }
 
 .bylines {
@@ -53,16 +57,26 @@ body {
     margin-bottom: 24px;
 }
 
-.bylines-avatar{
+.bylines-avatar {
     border-radius: 50%;
-    height: 15%;
-    width: 15%;
+    height: 5%;
+    width: 5%;
 }
 
 .bylines-info {
     font-size: 0.75em;
     padding-left: 10px;
     color: #525252b7;
+}
+
+.blog-subtitle{
+    padding: 5px 0;
+    font-size: 1.1em;
+}
+
+.blog-txt {
+    margin: 10px 0;
+    font-size: 1em;
 }
 
 .quote-section {

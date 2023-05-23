@@ -80,3 +80,24 @@
     text-decoration: none !important;
 	color: #000;
 }
+
+.social-list {
+    padding: 5px 0 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-item {
+    padding-inline: 5px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.linkedin {
+    width: 35px;
+}
