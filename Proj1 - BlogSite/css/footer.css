@@ -7,17 +7,8 @@
     font-size: 1.2em;
 }
 
-.subscribe-txt{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 0.9em;
-    width: 40%;
-}
-
 .subscribe-form{
-    width: 60%;
-    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .subscribe-label {
