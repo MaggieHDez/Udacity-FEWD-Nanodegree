@@ -97,6 +97,7 @@ body {
 }
 
 .post-btn:hover {
+    cursor: pointer;
 	background-color: #ffbd1f;
 	border: 1px solid #ffbd1f;
 }
