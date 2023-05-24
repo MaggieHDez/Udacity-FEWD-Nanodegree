@@ -10,8 +10,8 @@ You can go to the site by directly clicking on the link above or if downloading 
 
 ## Images
 
-Images provided by [https://www.pexels.com/creative-commons-images/](https://www.pexels.com/creative-commons-images/) under the Creative Commons Zero [https://creativecommons.org/publicdomain/zero/1.0/](CC0) license.
+Images provided by [Pexels](https://www.pexels.com/creative-commons-images/) under the Creative Commons Zero [CC0](https://creativecommons.org/publicdomain/zero/1.0/) license.
 
 ## Content
 
-Contents generated with [https://chat.openai.com/](ChatGPT).
+Contents generated with [ChatGPT](https://chat.openai.com/).
