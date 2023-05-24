@@ -6,11 +6,9 @@
 
     <title>My Personal Blog</title>
     <!-- Icon -->
-    <link rel = "icon" href = "./images/travel-icon.png" type = "image/x-icon">
+    <link rel="icon" href="./images/travel-icon.png" type="image/x-icon">
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
-      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
@@ -19,21 +17,21 @@
 
       <!-- Main header -->
       <header class="header flex">
-        <a class="logo-link flex" href="./index.html"><img class="img-logo" src="./images/travel-icon.png">
-        <span class="txt-logo">Travel Tips <span class="more-txt">& More</span></span></a>
+        <a class="logo-link flex" href="./index.html" aria-label="Home"><img class="img-logo" src="./images/travel-icon.png" alt="Website logo of a plane flying around the world">
+          <span class="txt-logo">Travel Tips <span class="more-txt">& More</span></span></a>
       </header>
 
       <!-- Navbar -->
       <nav class="navbar">
         <ul class="navbar-list flex">
           <li class="navbar-item">
-            <a class="navbar-link" href="./index.html">Home</a>
+            <a class="navbar-link" href="./index.html" aria-label="Home">Home</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="./blog-post.html">Blog Post</a>
+            <a class="navbar-link" href="./blog-post.html" aria-label="Blog Post">Blog Post</a>
           </li>
           <li class="navbar-item">
-            <a class="navbar-link" href="#">Subscribe</a>
+            <a class="navbar-link" href="#subscribe" aria-label="Subscribe">Subscribe</a>
           </li>
         </ul>
       </nav>
@@ -50,12 +48,14 @@
               </a>
             </h1>
             <p class="post-summary">
-              Looking to explore the world without breaking the bank? Discover practical tips and strategies for traveling on
+              Looking to explore the world without breaking the bank? Discover practical tips and strategies for traveling
+              on
               a budget in our latest blog post. From setting a realistic budget to choosing affordable destinations,
-              optimizing transportation costs, and embracing free and low-cost activities, we'll show you how to make the most
+              optimizing transportation costs, and embracing free and low-cost activities, we'll show you how to make the
+              most
               of your journey while keeping your finances intact.
             </p>
-            <a class="post-btn" href="./blog-post.html"> Read More</a>
+            <a class="post-btn" href="./blog-post.html" aria-label="Read more"> Read More</a>
           </article>
 
           <!-- This section is realted blog posts -->
@@ -63,14 +63,14 @@
             <h2 class="related-title">Related Posts</h2>
             <ul class="related-list">
               <li class="related-item">
-                <a class="related-link flex" href="#">
+                <a class="related-link flex" href="#" aria-label="First related post">
                   <img class="related-img" src="./images/sustainable-travel.jpg"
                     alt="European town and cable car shown from above">
                   <span class="related-txt">Guide to Sustainable Travel: Explore Responsibly, Leave a Positive
                     Impact</span></a>
               </li>
               <li class="related-item">
-                <a class="related-link flex" href="#">
+                <a class="related-link flex" href="#"  aria-label="Second related post">
                   <img class="related-img" src="./images/ancient-history.jpg"
                     alt="The pyramid of Khafre and the Great Sphinx of Giza">
                   <span class="related-txt">Ancient History: Unveiling the Mysteries of Archaeological Sites</span></a>
@@ -79,7 +79,7 @@
           </section>
         </div>
 
-        <section class="subscribe">
+        <section class="subscribe" id="subscribe">
           <h2 class="subscribe-title">Subscribe for more travel tips!</h2>
           <div class="subscribe-container">
             <p class="subscribe-txt">
@@ -87,15 +87,17 @@
             </p>
             <form class="subscribe-form" action="#">
               <label class="subscribe-label" for="fname">First Name</label>
-              <input class="subscribe-input" type="text" id="fname" name="firstname" placeholder="Enter your first name" />
+              <input class="subscribe-input" type="text" id="fname" name="firstname"
+                placeholder="Enter your first name" />
 
               <label class="subscribe-label" for="lname">Last Name</label>
               <input class="subscribe-input" type="text" id="lname" name="lastname" placeholder="Enter your last name" />
 
               <label class="subscribe-label" for="email">Email address</label>
-              <input class="subscribe-input" type="email" id="email" name="email" placeholder="Enter your email address" />
+              <input class="subscribe-input" type="email" id="email" name="email"
+                placeholder="Enter your email address" />
 
-              <input class="subscribe-btn" type="submit" value="Subscribe" />
+              <input class="subscribe-btn" type="submit" value="Subscribe"  aria-label="Subscribe" />
             </form>
           </div>
         </section>
@@ -105,25 +107,25 @@
       <footer class="footer">
         <p class="footer-txt flex">
           ©Copyright 2023 by
-          <a class="footer-link" href="https://github.com/MaggieHDez" target="_blank">
+          <a class="footer-link" href="https://github.com/MaggieHDez" target="_blank" aria-label="Go to github">
             <em>Margarita Hernandez</em>
           </a>
         </p>
         <ul class="social-list flex">
           <li class="social-item">
-            <a class="social-link" href="https://www.facebook.com/maggieHdezD/"><img class="icon"
+            <a class="social-link" href="https://www.facebook.com/maggieHdezD/" aria-label="Facebook logo"><img class="icon"
                 src="./images/f_logo_RGB-Blue_250.png" /></a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://twitter.com/kristykrim"><img class="icon"
-              src="./images/Twitter social icons - circle - blue.png" /></a>
+            <a class="social-link" href="https://twitter.com/kristykrim" aria-label="Twitter logo"><img class="icon"
+                src="./images/Twitter social icons - circle - blue.png" /></a>
           </li>
           <li class="social-item">
-            <a class="social-link" href="https://www.linkedin.com/in/maggie-hd/"><img class="icon linkedin"
-              src="./images/LI-In-Bug.png" /></a>
+            <a class="social-link" href="https://www.linkedin.com/in/maggie-hd/" aria-label="LinkedIn logo"><img class="icon linkedin"
+                src="./images/LI-In-Bug.png" /></a>
           </li>
         </ul>
       </footer>
-  </div>
+    </div>
   </body>
 </html>

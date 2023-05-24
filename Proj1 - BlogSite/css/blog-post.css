@@ -67,6 +67,25 @@ body {
     color: #707174;
 }
 
+.bylines-social {
+    padding: 5px 0 0;
+    margin: 0;
+}
+
+.bylines-item {
+    padding-inline: 5px;
+}
+
+.bylines-icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.bylines-linkedin {
+    width: 25px;
+}
+
 .blog-subtitle{
     padding: 5px 0;
     font-size: 1.1em;

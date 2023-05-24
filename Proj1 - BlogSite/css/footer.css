@@ -1,13 +1,13 @@
-.subscribe{
+.subscribe {
     margin-top: 25px;
 }
 
-.subscribe-title{
+.subscribe-title {
     margin-bottom: 13px;
     font-size: 1.2em;
 }
 
-.subscribe-form{
+.subscribe-form {
     padding-top: 10px;
 	font-size: 1em;
 }
@@ -17,7 +17,7 @@
 	margin-left: 12px;
 }
 
-.subscribe-input{
+.subscribe-input {
     width: 100%;
     padding: 5px;
     border: 1px solid #154484;
@@ -29,7 +29,7 @@
     color: #fdfdfd;
 }
 
-.subscribe-input:focus{
+.subscribe-input:focus {
     outline-color:  #ffbd1f;
 }
 
@@ -53,7 +53,7 @@
     padding: 15px;
 }
 
-.footer-txt{
+.footer-txt {
     align-items: center;
     justify-content: center;
     font-size: 0.9em;
