@@ -14,4 +14,4 @@ Images provided by [Pexels](https://www.pexels.com/creative-commons-images/) und
 
 ## Content
 
-Contents generated with [ChatGPT](https://chat.openai.com/).
+Content generated with [ChatGPT](https://chat.openai.com/).
