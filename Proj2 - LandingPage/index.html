@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <div class="grid-container">
+
+        <!-- Main header -->
+      <header class="header">
+      <nav class="navbar">
+        <ul class="navbar-list flex" id="navbar-links">
+        </ul>
+      </nav>
+      </header>
+
+
+
+      <!-- Main content -->
+      <main class="main-content">
+        <section id="home" data-navigation="Home" class="hero">
+          <h1>Innovative Design</h1>
+          <p>We create stunning and functional websites for your business.</p>
+          <a href="#services" class="btn">Learn More</a>
+        </section>
+        <div class="flex">
+          <section id="services" data-navigation="Services" class="landing-section flex">
+            <div class="section-container">
+              <h2 class="section-title">Our Services</h2>
+              <ul>
+                <li>
+                  <h3 class="section-subtitle">Responsive Web Design</h3>
+                  <p class="section-txt">Create websites that adapt and provide an optimal viewing experience across various devices and screen
+                    sizes.
+                  </p>
+                </li>
+                <li>
+                  <h3 class="section-subtitle">UI/UX Design</h3>
+                  <p class="section-txt">Design user-friendly interfaces and intuitive user experiences to enhance customer engagement and
+                    satisfaction.
+                  </p>
+                </li>
+                <li>
+                  <h3 class="section-subtitle">Content Management Systems</h3>
+                  <p class="section-txt">Develop custom content management systems that empower you to easily manage and update your website
+                    content.
+                  </p>
+                </li>
+                <li>
+                  <h3 class="section-subtitle">Website Maintenance</h3>
+                  <p class="section-txt">Provide ongoing website maintenance services to ensure your website remains secure, up-to-date, and
+                    optimized
+                    for performance.</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="about us" data-navigation="About Us" class="landing-section flex">
+            <div class="section-container">
+              <h2 class="section-title">About Us</h2>
+              <p class="section-txt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non laoreet libero. Nunc sed elementum felis. Vestibulum in tristique ante. Cras ullamcorper lacus id sapien dapibus, eget eleifend lectus hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris ut euismod turpis, at auctor ligula. Nullam non ligula interdum, dignissim dolor vel, aliquet nulla. Sed quis vestibulum purus. Donec sed risus nec purus ultricies pharetra sollicitudin non sem. Praesent egestas lorem diam, vel luctus nisl dignissim in.</p>
+            </div>
+          </section>
+
+          <section id="contact" data-navigation="Contact" class="landing-section flex contact">
+            <div class="section-container">
+              <h2 class="section-title">Contact Us</h2>
+              <p class="section-txt">Ready to discuss your project or have any questions? Fill out the form below to get in touch!</p>
+
+              <form class="contact-form" action="#">
+                <label class="contact-label" for="fname">First Name</label>
+                <input class="contact-input" type="text" id="fname" name="firstname"
+                  placeholder="Enter your first name" />
+
+                <label class="contact-label" for="lname">Last Name</label>
+                <input class="contact-input" type="text" id="lname" name="lastname" placeholder="Enter your last name" />
+
+                <label class="contact-label" for="email">Email address</label>
+                <input class="contact-input" type="email" id="email" name="email"
+                  placeholder="Enter your email address" />
+
+                <input class="contact-btn" type="submit" value="Send Message"  aria-label="Send Message" />
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+       <!-- Footer -->
+       <footer class="footer">
+        <p class="footer-txt">
+          ©Copyright 2023 by
+          <a class="footer-link" href="https://github.com/MaggieHDez" target="_blank" aria-label="Go to github">
+            <em>Margarita Hernandez</em>
+          </a>
+        </p>
+      </footer>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>
