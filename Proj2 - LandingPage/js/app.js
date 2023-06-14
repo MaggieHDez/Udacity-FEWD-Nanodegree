@@ -22,14 +22,6 @@ function generateNavLinks() {
   });
 }
 
-function hideNavbar() {
-  navbar.classList.add('hidden');
-}
-
-function showNavbar() {
-  navbar.classList.remove('hidden');
-}
-
 // Function updates the active class in a section when a click, scroll or resize is fired
 function updateActiveClass() {
   const navLinks = document.querySelectorAll('.navbar ul li a');
