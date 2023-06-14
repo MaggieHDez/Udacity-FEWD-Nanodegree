@@ -242,7 +242,7 @@ header .flex{
 }
 
 .footer-link:active {
-	color: #ffbd1f !important;
+	color: #000 !important;
 }
 
 .footer-link:visited {
