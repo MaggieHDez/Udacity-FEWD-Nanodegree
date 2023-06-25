@@ -80,7 +80,7 @@ header .flex{
 
 .active, .navbar-link:hover {
 	color: #fff !important;
-	background-color: #c1b5da;
+	background-color: #5b546d;
 }
 
 .navbar-link:visited {
@@ -105,7 +105,7 @@ header .flex{
   }
 
   #topBtn:hover {
-    background-color: #535353;
+    background-color: #5b546d;
   }
 
   .hidden {
@@ -153,7 +153,7 @@ header .flex{
   .hero .btn {
 	display: inline-block;
 	padding: 12px 24px;
-	background-color: #333;
+	background-color: #5c5a5a;
 	color: #fff;
 	text-decoration: none;
 	border-radius: 5px;
@@ -162,7 +162,7 @@ header .flex{
 
   .hero .btn:hover {
 	color: #fff !important;
-	background-color: #c1b5da;
+	background-color: #5b546d;
   }
 
   /* Landing page sections */
@@ -226,8 +226,8 @@ header .flex{
 }
 
 .contact-btn {
-    background-color: #333;
-	border: 1px solid #333;
+    background-color: #858484;
+	border: 1px solid #858484;
 	border-radius: 5px;
     color: #fdfdfd;
 	padding: 8px 14px;
@@ -236,8 +236,8 @@ header .flex{
 }
 
 .contact-btn:hover {
-	background-color: #c1b5da;
-	border: 1px solid #c1b5da;
+	background-color: #5b546d;
+	border: 1px solid #5b546d;
 }
 /* Footer */
 
@@ -262,7 +262,7 @@ header .flex{
 }
 
 .footer-link:hover {
-	color: #c1b5da !important;
+	color: #5b546d !important;
 }
 
 .footer-link:active {
