@@ -102,15 +102,15 @@ header .flex{
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
+}
 
-  #topBtn:hover {
+#topBtn:hover {
     background-color: #5b546d;
-  }
+}
 
-  .hidden {
+.hidden {
     display: none;
-  }
+}
 
 /* Main content */
 
@@ -135,7 +135,7 @@ header .flex{
 	height: 100vh;
 }
 
-  .hero h1 {
+.hero h1 {
 	font-size: 36px;
 	margin-bottom: 20px;
 	margin-inline: 20px;
@@ -143,14 +143,14 @@ header .flex{
 	z-index: 1;
 }
 
-  .hero p {
+.hero p {
 	font-size: 1em;
 	color: #fff;
 	margin-bottom: 40px;
 	margin-inline: 20px;
-  }
+}
 
-  .hero .btn {
+.hero .btn {
 	display: inline-block;
 	padding: 12px 24px;
 	background-color: #5c5a5a;
@@ -158,43 +158,44 @@ header .flex{
 	text-decoration: none;
 	border-radius: 5px;
 	font-size: 16px;
-  }
+}
 
-  .hero .btn:hover {
+.hero .btn:hover {
 	color: #fff !important;
 	background-color: #5b546d;
-  }
+}
 
-  /* Landing page sections */
+/* Landing page sections */
 
-  .flex{
+.flex{
 	flex-direction: column;
-  }
+}
 
-  .landing-section{
+.landing-section{
 	padding: 30px;
 	min-height: 80vh;
 	align-items: center;
 	font-size: 1.5em;
-  }
+}
 
-  .section-container{
+.section-container{
 	padding: 30px;
-  }
+}
 
-  .section-title {
+.section-title {
     font-size: 1.5em;
-  }
-  .section-subtitle{
+}
+
+.section-subtitle{
 	padding: 5px 0;
 	font-size: 1.1em;
-  }
+}
 
-  .section-txt{
+.section-txt{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 1em;
-  }
+}
 
   /* Contact form */
 .contact-form {
