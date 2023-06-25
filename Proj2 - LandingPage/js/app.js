@@ -4,7 +4,6 @@ let activeSection = document.querySelector('.active-class');
 let activeLink = document.querySelector('.active');
 const navLinks = document.querySelectorAll('.navbar ul li a');
 let topButton = document.getElementById("topBtn");
-let prevScrollY = 0;
 
 // Function to dynamically generate the navbar links
 
@@ -52,8 +51,7 @@ function atHeroSection(){
 
 // Function updates the active class in a section when a click, scroll or resize is fired
 function updateActiveClass() {
-    const viewportHeight = window.innerHeight;
-    let ratioWindow;
+    const viewportHeight = window.innerHeight + 500;
     // Show top button when scrolling down over 20 pixels
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       topButton.classList.remove('hidden');
@@ -61,17 +59,9 @@ function updateActiveClass() {
       topButton.classList.add('hidden');
       atHeroSection()
     }
-    //viewport is divided by the number of sections existing in the page, does not include Hero
-    //if for scrolling down, else for scrolling up
-    if (window.scrollY > prevScrollY) {
-      ratioWindow = viewportHeight/navSections.length;
-    } else {
-      ratioWindow = viewportHeight*2/navSections.length;
-    }
-    prevScrollY = window.scrollY; //saves window Y scroll position in variable prevScrollY
     for (const section of navSections) {
         const position = section.getBoundingClientRect();
-        if (position.top < ratioWindow && position.bottom > ratioWindow) {
+        if (position.top >= 0 && position.bottom <= viewportHeight) {
           setActive(section);
         }
     }
