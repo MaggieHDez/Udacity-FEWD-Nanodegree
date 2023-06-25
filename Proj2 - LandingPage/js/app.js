@@ -27,7 +27,7 @@ function generateNavLinks() {
   });
 }
 
-// Set Active section
+// Setting section and navigation link to active
 
 function setActive(section) {
   let navLink = document.getElementById(`${section.id}__link`);
@@ -41,7 +41,7 @@ function setActive(section) {
   activeLink = navLink;
 }
 
-//removes active section and link if at the top of page
+// Removes active section and link if at the top of page
 function atHeroSection(){
   if (activeSection !== null){
     activeSection.classList.remove('active-class');
@@ -54,6 +54,7 @@ function atHeroSection(){
 function updateActiveClass() {
     const viewportHeight = window.innerHeight;
     let ratioWindow;
+    // Show top button when scrolling down over 20 pixels
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
       topButton.classList.remove('hidden');
     } else {
@@ -67,7 +68,7 @@ function updateActiveClass() {
     } else {
       ratioWindow = viewportHeight*2/navSections.length;
     }
-    prevScrollY = window.scrollY;
+    prevScrollY = window.scrollY; //saves window Y scroll position in variable prevScrollY
     for (const section of navSections) {
         const position = section.getBoundingClientRect();
         if (position.top < ratioWindow && position.bottom > ratioWindow) {
@@ -77,7 +78,7 @@ function updateActiveClass() {
 
 }
 
-// prevents default scroll event, add a scrollto to the target offset and calls the function to update the active section
+// Prevents default scroll event, add a scrollto to the target offset and calls the function to update the active section
 function scrollToSection(event) {
   event.preventDefault();
 
@@ -97,7 +98,7 @@ function scrollToSection(event) {
 }
 
   // When the user clicks on the button, scroll to the top of the document
-  function topFunction() {
+  function topTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }

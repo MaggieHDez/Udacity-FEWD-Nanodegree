@@ -121,6 +121,7 @@ header .flex{
 }
 
 /* Hero Section */
+
 .hero {
 	grid-area: hero;
 	display: flex;
