@@ -1,1 +1,0 @@
-const API_KEY = '0a14f53bb278bb798efca511e2fbb13d&units=imperial';

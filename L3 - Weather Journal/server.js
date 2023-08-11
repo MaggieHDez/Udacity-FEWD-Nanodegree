@@ -26,3 +26,20 @@ function listening(){
     console.log('server running');
     console.log(`running on localhost: ${port}`);
 }
+
+// TODO routes
+app.get('/all', function (req, res) {
+  res.send(projectData);
+});
+
+const data = [];
+
+app.post('/addMovie', addMovie );
+
+function addMovie (req, res){
+  let data = req.body;
+  projectData["movie"] = data.movie;
+  projectData["score"] = data.score;
+  console.log(projectData);
+  // data.push(data);
+ };
