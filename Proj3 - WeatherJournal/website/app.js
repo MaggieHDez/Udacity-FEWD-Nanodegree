@@ -6,6 +6,17 @@ const baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
 let d = new Date();
 let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
 
+// Event listener to add function to existing HTML DOM element
+const submitBtn = document.getElementById("generate");
+submitBtn.addEventListener('click', generateAction);
+
+/* Function called by event listener */
+function generateAction(evt) {
+    evt.preventDefault;
+    console.log("Success!", evt);
+}
+
+/* Function to POST data */
 const postData = async ( url = '', data = {})=>{
     console.log(data);
       const response = await fetch(url, {
