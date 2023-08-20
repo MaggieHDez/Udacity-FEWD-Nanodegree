@@ -36,6 +36,7 @@ app.get('/all', function (req, res) {
 app.post("/generateWeatherData", weatherData);
 
 function weatherData(req, res) {
-    data = req.body;
-    res.send(data)
+  data = req.body;
+  console.log('weather data', data)
+  res.send(data)
 }
