@@ -2,6 +2,7 @@
 
 Nanodegree: Udacity Front-End Web Developer Nanodegree
 Course: Web APIs and Asynchronous Applications
+
 ## Overview
 This project requires the creation of an asynchronous web app that uses Web API and user data to dynamically update the UI.
 
@@ -13,4 +14,7 @@ After installing the required dependencies, open a terminal window (or cmd.exe) 
 
 ## API
 Content generated with [OpenWeather](https://openweathermap.org/).
+
+## Starter code
+[The Weather Journal project repository](https://github.com/udacity/fend/tree/refresh-2019) => projects => weather-journal-app
 
