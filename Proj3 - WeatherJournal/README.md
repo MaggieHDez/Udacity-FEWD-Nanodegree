@@ -1,10 +1,16 @@
 # Weather-Journal App Project
 
+Nanodegree: Udacity Front-End Web Developer Nanodegree
+Course: Web APIs and Asynchronous Applications
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+This project requires the creation of an asynchronous web app that uses Web API and user data to dynamically update the UI.
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+## Dependencies to install
+With the npm command install the express, cors and body-parser dependencies in the folder where the project is located (in this case Proj3 - WeatherJournal).
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+## How to run
+After installing the required dependencies, open a terminal window (or cmd.exe) and run the node server.js in the project folder (Proj3 - WeatherJournal) you will receive a message indicating where the project is running in this case [localhost port 8080](http://localhost:8080/)
+
+## API
+Content generated with [OpenWeather](https://openweathermap.org/).
+

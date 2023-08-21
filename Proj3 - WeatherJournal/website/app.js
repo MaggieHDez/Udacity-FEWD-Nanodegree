@@ -78,7 +78,7 @@ const updateUI = async () => {
     const allData = await request.json();
     allData.reverse();
     document.getElementById('date').innerHTML = `Date: ${allData[0].date}`;
-    document.getElementById('temp').innerHTML = `Temp: ${allData[0].temperature} degrees`;
+    document.getElementById('temp').innerHTML = `Temp: ${allData[0].temperature} degrees Fahrenheit`;
     document.getElementById('content').innerHTML = `Feelings: ${allData[0].feelings}`;
 
   }catch(error){
