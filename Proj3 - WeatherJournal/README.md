@@ -1,6 +1,6 @@
 # Weather-Journal App Project
 
-Nanodegree: Udacity Front-End Web Developer Nanodegree
+Nanodegree: Udacity Front-End Web Developer Nanodegree<br>
 Course: Web APIs and Asynchronous Applications
 
 ## Overview
