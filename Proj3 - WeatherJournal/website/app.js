@@ -11,28 +11,30 @@ submitBtn.addEventListener('click', performAction);
 function performAction(evt) {
   evt.preventDefault;
   let zip = document.getElementById("zip").value;
-  let country = document.getElementById("countries").value;
 	let feelings = document.getElementById("feelings").value;
+  let valid = validateZip(zip);
+  if (valid){
   // Calling Weather API
-	getData(baseUrl, zip, country, API_KEY)
-		.then(function (data) {
-      // Check if data was found
-      if (data !== null) {
-        // Add data to POST request
-        postData("/generateWeatherData", {
-          date: formatDate(data.dt),
-          temperature: data.main.temp,
-          userResponse: feelings,
-        }).then(updateUI());
-      }
-		})
-  console.log("Success!");
+    getData(baseUrl, zip, API_KEY)
+      .then(function (data) {
+        // Check if data was found
+        if (data !== null) {
+          // Add data to POST request
+          postData("/generateWeatherData", {
+            date: formatDate(data.dt),
+            temperature: data.main.temp,
+            userResponse: feelings,
+          }).then(updateUI());
+        }
+      });
+    console.log("Success!");
+  }
 }
 
 /* Function to GET Web API Data*/
-const getData = async (baseUrl, zipCode, country, API_KEY) => {
+const getData = async (baseUrl, zipCode, API_KEY) => {
 
-  let url = `${baseUrl}/?zip=${zipCode},${country}&appid=${API_KEY}`;
+  let url = `${baseUrl}/?zip=${zipCode}&appid=${API_KEY}`;
   // Fetch
   const res = await fetch(url);
   try {
@@ -74,12 +76,23 @@ const updateUI = async () => {
   const request = await fetch('/all');
   try{
     const allData = await request.json();
-    document.getElementById('date').innerHTML = `Temp: ${allData[0].date},`;
-    document.getElementById('temp').innerHTML = ` Date: ${allData[0].temperature},`;
-    document.getElementById('content').innerHTML = ` Feelings: ${allData[0].feelings}`;
+    allData.reverse();
+    document.getElementById('date').innerHTML = `Date: ${allData[0].date}`;
+    document.getElementById('temp').innerHTML = `Temp: ${allData[0].temperature} degrees`;
+    document.getElementById('content').innerHTML = `Feelings: ${allData[0].feelings}`;
 
   }catch(error){
     console.log("error", error);
+  }
+}
+
+function validateZip(zip){
+  if (zip.toString().length === 5){
+    document.getElementById("errorMsg").classList.add('valid');
+    return true;
+  } else{
+    document.getElementById("errorMsg").classList.remove('valid');
+    return false;
   }
 }
 

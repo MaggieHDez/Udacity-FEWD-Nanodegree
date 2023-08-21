@@ -11,17 +11,10 @@
   <div class ="holder headline">
     Weather Journal App
   </div>
-  <div class="holder country">
-    <label for="countries">Select Country</label>
-    <select name="countries" id="countries">
-      <option value="">--Please choose an option--</option>
-      <option value="us">USA</option>
-      <option value="mx">Mexico</option>
-    </select>
-  </div>
   <div class ="holder zip">
     <label for="zip">Enter Zipcode here</label>
-    <input type="text" id="zip" placeholder="enter zip code here">
+    <input type="text" id="zip" placeholder="Enter zip code here">
+    <span class="valid" id="errorMsg">Zip code has to be 5 characters</span>
   </div>
   <div class ="holder feel">
     <label for="feelings">How are you feeling today?</label>
@@ -31,9 +24,9 @@
   <div class ="holder entry">
     <div class = "title">Most Recent Entry</div>
       <div id = "entryHolder">
-        <div id = "date"></div>
-        <div id = "temp"></div>
-        <div id = "content"></div>
+        <div id = "date">Date:</div>
+        <div id = "temp">Temp:</div>
+        <div id = "content">Feelings:</div>
       </div>
     </div>
   </div>

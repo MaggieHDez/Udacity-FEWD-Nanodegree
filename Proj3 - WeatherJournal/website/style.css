@@ -1,8 +1,9 @@
 @import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;700&display=swap');
 
 body{
     background: #fffff8;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: 'Wix Madefor Display', sans-serif;
 }
 
 #app{
@@ -11,12 +12,11 @@ body{
     grid-template-rows: minmax(100px,auto);
     grid-template-areas:
         "hd hd"
-        "country country"
         "zip zip"
         "feelings feelings"
         "result result";
     height:100vh;
-    background: #f23557;
+    background: #89aad8;
     grid-gap: 1em;
     justify-content: center;
     padding-bottom: 10px;
@@ -24,7 +24,7 @@ body{
 }
 
 .holder{
-    color: #f0d43a;
+    color: #fff;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 
@@ -38,23 +38,17 @@ body{
     grid-area: hd;
 }
 
-.country {
-    grid-area: country;
-}
-
-#countries{
-    display:block;
-    height: 60px;
-    width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
-}
-
 .zip{
     grid-area: zip;
+}
+
+.valid{
+    display: none;
+}
+
+#errorMsg{
+    color: rgb(119, 29, 29);
+    font-size: .75em;
 }
 
 .feel{
@@ -71,7 +65,7 @@ body{
 
 .entry{
     grid-area: result;
-    background: rgba(59, 74, 107, .4);
+    background: rgba(18, 56, 110, 0.4);
 }
 
 #entryHolder{
@@ -79,15 +73,15 @@ body{
 }
 
 #date{
-
+    color: #6adce0;
 }
 
 #temp{
-
+    color: #aae632;
 }
 
 #content{
-
+    color: #dba21e;
 }
 
 .title{
@@ -104,8 +98,8 @@ input{
     display:block;
     height: 60px;
     width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
+    background:#fff;
+    color: #000;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
     border: none;
@@ -116,20 +110,27 @@ button{
 	padding: 8px 20px;
     margin-top: 0px;
     text-decoration: none;
-    background: #3b4a6b;
-    color: #f0d43a;
+    background: #154484;
+    color: #fff;
     font-size: 1em;
     font-family: 'Oswald', sans-serif;
     border: none;
     box-shadow: 2px 4px 5px #444;
 }
+
+button:hover {
+    cursor: pointer;
+    background: #ffbd1f;
+    color: #000;
+}
+
 h1{
     font-size: 36px;
 }
 
 textarea{
-    background:#22b2da;
-    color: #f0d43a;
+    background:#fff;
+    color: #000;
     font-size: 20px;
     font-family: 'Oswald', sans-serif;
 }
@@ -142,19 +143,19 @@ button:focus {
 }
 /* Style for Placeholder Text*/
 ::placeholder { /* Firefox, Chrome, Opera */
-    color: #f0d43a;
+    color: #000;
     font-family: 'Oswald', sans-serif;
 
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: #f0d43a;
+    color: #000;
     font-family: 'Oswald', sans-serif;
 
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-    color: #f0d43a;
+    color: #000;
     font-family: 'Oswald', sans-serif;
 
 }
