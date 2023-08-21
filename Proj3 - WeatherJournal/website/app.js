@@ -11,37 +11,39 @@ submitBtn.addEventListener('click', performAction);
 function performAction(evt) {
   evt.preventDefault;
   let zip = document.getElementById("zip").value;
+  let country = document.getElementById("countries").value;
 	let feelings = document.getElementById("feelings").value;
-
-	getData(baseUrl, zip, API_KEY)
+  // Calling Weather API
+	getData(baseUrl, zip, country, API_KEY)
 		.then(function (data) {
-      // Add data
-      if (data!== null) {
+      // Check if data was found
+      if (data !== null) {
+        // Add data to POST request
         postData("/generateWeatherData", {
+          date: formatDate(data.dt),
           temperature: data.main.temp,
-          date: formatDate(data.dt * 1000),
           userResponse: feelings,
-        });
+        }).then(updateUI());
       }
 		})
   console.log("Success!");
 }
 
 /* Function to GET Web API Data*/
-const getData = async (baseUrl, zipCode, API_KEY) => {
+const getData = async (baseUrl, zipCode, country, API_KEY) => {
 
-  let url = `${baseUrl}/?zip=${zipCode}&appid=${API_KEY}`;
-
-  const request = await fetch(url);
+  let url = `${baseUrl}/?zip=${zipCode},${country}&appid=${API_KEY}`;
+  // Fetch
+  const res = await fetch(url);
   try {
     // Transform into JSON
-    const allData = await request.json();
-    if( allData.cod !== 200){
-      alert(`Error retrieving data: ${allData.message}`);
+    const data = await res.json();
+    if( data.cod !== 200){
+      alert(`Error retrieving data: ${data.message}`);
       return null;
     } else {
-      console.log('data', allData);
-      return allData;
+      console.log('data', data);
+      return data;
     }
   } catch (error) {
     console.log("error", error);
@@ -68,8 +70,21 @@ const postData = async (url = "", data = {}) => {
   }
 };
 
+const updateUI = async () => {
+  const request = await fetch('/all');
+  try{
+    const allData = await request.json();
+    document.getElementById('date').innerHTML = `Temp: ${allData[0].date},`;
+    document.getElementById('temp').innerHTML = ` Date: ${allData[0].temperature},`;
+    document.getElementById('content').innerHTML = ` Feelings: ${allData[0].feelings}`;
+
+  }catch(error){
+    console.log("error", error);
+  }
+}
+
 function formatDate(date) {
-  var d = new Date(date),
+  var d = new Date(date * 1000),
       month = '' + (d.getMonth() + 1),
       day = '' + d.getDate(),
       year = d.getFullYear();
